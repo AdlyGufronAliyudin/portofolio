@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | Adly Gufron Aliyudin</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/icons/list?f=classic&s=solid"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Costume Css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="noise">
+    <!-- Background Layers -->
+    <div class="bg-container">
+      <div class="blobs-center">
+        <div
+          class="blob-core"
+          style="width: 600px; height: 600px; background: #4f46e5; left: 30%"
+        ></div>
+        <div
+          class="blob-core"
+          style="
+            width: 500px;
+            height: 500px;
+            background: #db2777;
+            right: 20%;
+            animation-delay: -5s;
+          "
+        ></div>
+        <div
+          class="blob-core"
+          style="
+            width: 450px;
+            height: 450px;
+            background: #0891b2;
+            bottom: 10%;
+            animation-delay: -10s;
+          "
+        ></div>
+      </div>
+      <canvas id="topography-canvas"></canvas>
+      <div class="overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" aria-label="Main Navigation">
+      <div class="nav-container">
+        <a href="#home" class="logo">Adly Gufron Aliyudin.</a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <section class="header-section" id="home">
+      <div class="hero-container">
+        <div class="wrapper">
+          <div class="hero-content">
+            <div
+              class="inline-flex items-center gap-3 bg-white/[0.03] border border-white/10 px-4 py-2 rounded-full mb-6 backdrop-blur-xl"
+            >
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"
+                ></span>
+              </span>
+              <span
+                class="text-[10px] font-bold tracking-[0.2em] uppercase text-indigo-300"
+                >Ready to Collaborate</span
+              >
+            </div>
+            <div class="hero-title">
+              <h1 class="font-bold">
+                <span>Full Stack</span>
+                <span class="SubTitle">Web Developer</span>
+              </h1>
+            </div>
+            <div class="subText">
+              <h3>
+                <a
+                  href="#"
+                  class="type-writer"
+                  style="pointer-events: none; cursor: default"
+                  data-period="2000"
+                  data-type='[ 
+                               "Computer Science Student.", 
+                               "SMK PUI Cikijing Tech Enthusiast.", 
+                               "Creative Web Developer."
+                           ]'
+                >
+                  <span></span>
+                </a>
+              </h3>
+            </div>
+            <div class="subText">
+              <h4>
+                Bridging the gap between captivating visuals and intuitive
+                digital solutions.
+              </h4>
+            </div>
+            <div class="techStack">
+              <div>
+                <span>php</span>
+              </div>
+              <div>
+                <span>JavaScript</span>
+              </div>
+              <div>
+                <span>node.js</span>
+              </div>
+              <div>
+                <span>laravel</span>
+              </div>
+            </div>
+            <div class="cta-btn">
+              <div>
+                <a href="" class="main">
+                  <span>project</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <span>contact</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="SosialMedia">
+              <a href="https://www.instagram.com/meedlyee" class="home__icon" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://github.com/AdlyGufronAliyudin?tab=repositories" class="home__icon" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" target="_blank" class="home__icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="home__icon" target="_blank"
+                ><i class="fab fa-discord"></i
+              ></a>
+            </div>
+          </div>
+          <div class="box"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="reveal">
+        <div class="container-about">
+          <div class="wrapper-about">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">About me</h2>
+            <div class="max-w-3xl text-gray-400 text-lg space-y-6 mb-4 leading-relaxed">
+              <p class="mb-4">
+                Hi, I'm <span class="text-white font-semibold">Adly gufron aliyudin</span>, a
+                Computer Science student at
+                <span class="italic text-gray-400">Smk pui cikijing</span>.
+              </p>
+    
+              <p class="mb-4">
+                Great design is only as good as its performance. I bridge
+                <span class="text-white">high-end aesthetics</span> with robust
+                digital logic to solve real-world problems. By prioritizing user
+                flow and technical integrity, I ensure every project is as impactful
+                as it is beautiful.
+              </p>
+    
+              <p>
+                I specialize in
+                <span class="text-white font-semibold">
+                  Full-Stack development,
+                </span>
+                distilling technical complexity into seamless digital experiences
+                that optimize user interaction and drive impact.
+              </p>
+            </div>
+            <div class="cta-btn" id="cta-btn-mb" style="justify-content: center;">
+                <div class="about-cta">
+                    <a href="" class="main">
+                      <span>view project</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#e3e3e3"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg>
+                    </a>
+                </div>
+                <div class="about-cta">
+                    <a href="">
+                      <span> dowload cv</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+<section class="work-section" id="work">
+  <div class="portfolio-showcase reveal">
+
+    <div class="ps-header">
+      <h2 class="text-4xl md:text-5xl font-bold mb-8">Portfolio Showcase</h2>
+      <p>
+        Explore my journey through projects, certifications, and technical expertise.
+        Each section represents a milestone in my continuous learning path.
+      </p>
+    </div>
+
+    <!-- TAB WRAPPER -->
+    <div class="ps-tabs-wrapper">
+      <div class="ps-tabs">
+        <button class="ps-tab active" data-tab="projects">
+          <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="22px" fill="#e3e3e3"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg>
+          <span>Projects</span>
+        </button>
+        <button class="ps-tab" data-tab="certificates">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm410-350q70-70 70-170t-70-170q-70-70-170-70t-170 70q-70 70-70 170t70 170q70 70 170 70t170-70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z"/></svg>
+          <span>Certificates</span>
+        </button>
+        <button class="ps-tab" data-tab="tech">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-160v-441q0-33 24-56t57-23h439q33 0 56.5 23.5T880-600v320L680-80H360q-33 0-56.5-23.5T280-160ZM81-710q-6-33 13-59.5t52-32.5l434-77q33-6 59.5 13t32.5 52l10 54h-82l-7-40-433 77 40 226v279q-16-9-27.5-24T158-276L81-710Zm279 110v440h280v-160h160v-280H360Zm220 220Z"/></svg>
+          <span>Tech Stack</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="ps-content active" id="projects">
+        <div class="coming-soon">project coming soon.</div>
+    </div>
+
+    <div class="ps-content" id="certificates">
+      <div class="coming-soon">Certificates coming soon.</div>
+    </div>
+
+    <div class="ps-content" id="tech">
+      <div class="coming-soon">Tech stack overview coming soon.</div>
+    </div>
+
+  </div>
+</section>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="reveal">
+        <h2 class="text-5xl md:text-7xl font-bold mb-8">Mari Berkolaborasi.</h2>
+        <p class="text-gray-400 mb-10 text-lg">
+          Punya ide luar biasa? Mari kita wujudkan bersama.
+        </p>
+        <a
+          href="mailto:meedlyee@gmail.com"
+          class="text-2xl md:text-4xl font-light hover:text-indigo-400 transition-colors border-b border-gray-800 pb-2"
+        >
+          meedlyee@gmail.com
+        </a>
+        <div class="flex gap-6 mt-12 justify-center text-gray-500">
+          <a href="#" class="text-2xl hover:text-white transition-colors"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#" class="text-2xl hover:text-white transition-colors"
+            ><i class="fab fa-discord"></i
+          ></a>
+          <a href="https://github.com/AdlyGufronAliyudin?tab=repositories" class="text-2xl hover:text-white transition-colors"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/meedlyee/" class="text-2xl hover:text-white transition-colors"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="py-10 text-center text-gray-600 text-sm relative z-10 border-t border-white/5"
+    >
+      &copy; 2025. All Rights Reserved.
+    </footer>
+    <!-- this website using reference by Abhishek Ganvir portofolio -->
+    <script src="js/background.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
