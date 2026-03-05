@@ -129,3 +129,4 @@ License
 Proyek ini dibuat untuk tujuan pengembangan pribadi dan portofolio.
 
 This project is intended for personal development and portfolio purposes.
+
